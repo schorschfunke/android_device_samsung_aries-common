@@ -54,8 +54,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/init.aries.usb.rc:recovery/root/usb.rc \
 	device/samsung/aries-common/fstab.aries:root/fstab.aries \
 	device/samsung/aries-common/lpm.rc:root/lpm.rc \
-	device/samsung/aries-common/ueventd.aries.rc:root/ueventd.aries.rc \
-	device/samsung/aries-common/setupdatadata.sh:root/sbin/setupdatadata.sh
+	device/samsung/aries-common/ueventd.aries.rc:root/ueventd.aries.rc
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
@@ -174,10 +173,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Override /proc/sys/vm/dirty_ratio on UMS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
-
-# We have sacrificed /cache for a larger /system, so it's not large enough for dalvik cache
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dexopt-data-only=1
 
 # Set default USB interface and default to internal SD as /sdcard
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
