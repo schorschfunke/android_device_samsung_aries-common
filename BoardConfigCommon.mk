@@ -46,8 +46,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/aries
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
 
 # Releasetools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/aries-common/releasetools/aries_ota_from_target_files
-TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/aries-common/releasetools/aries_img_from_target_files
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/aries-common
 
 # Camera
 USE_CAMERA_STUB := false
