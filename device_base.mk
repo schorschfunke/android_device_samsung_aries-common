@@ -55,6 +55,11 @@ PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/fstab.aries:root/fstab.aries \
 	device/samsung/aries-common/lpm.rc:root/lpm.rc \
 	device/samsung/aries-common/ueventd.aries.rc:root/ueventd.aries.rc
+	
+# Recovery filemanager
+PRODUCT_COPY_FILES += \
+  device/samsung/aries-common/aroma/aromafm.zip:recovery/root/tmp/aromafm.zip \
+  device/samsung/aries-common/aroma/aromafm.zip.cfg:recovery/root/tmp/aromafm.zip.cfg
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
