@@ -110,7 +110,8 @@ PRODUCT_PACKAGES += \
 	libs3cjpeg
 
 PRODUCT_COPY_FILES += \
-	device/samsung/aries-common/libaudio/audio_policy.conf:system/etc/audio_policy.conf
+	device/samsung/aries-common/libaudio/audio_policy.conf:system/etc/audio_policy.conf \
+	device/samsung/aries-common/etc/init.d/read_ahead:system/etc/init.d/read_ahead
 
 # Libs
 PRODUCT_PACKAGES += \
