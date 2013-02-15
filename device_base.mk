@@ -56,11 +56,6 @@ PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/lpm.rc:root/lpm.rc \
 	device/samsung/aries-common/ueventd.aries.rc:root/ueventd.aries.rc
 	
-# Recovery filemanager
-PRODUCT_COPY_FILES += \
-  device/samsung/aries-common/aroma/aromafm.zip:recovery/root/tmp/aromafm.zip \
-  device/samsung/aries-common/aroma/aromafm.zip.cfg:recovery/root/tmp/aromafm.zip.cfg
-
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl \
@@ -109,8 +104,7 @@ PRODUCT_PACKAGES += \
 	libs3cjpeg
 
 PRODUCT_COPY_FILES += \
-	device/samsung/aries-common/libaudio/audio_policy.conf:system/etc/audio_policy.conf \
-	device/samsung/aries-common/etc/init.d/read_ahead:system/etc/init.d/read_ahead
+	device/samsung/aries-common/libaudio/audio_policy.conf:system/etc/audio_policy.conf
 
 # Libs
 PRODUCT_PACKAGES += \
